@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abx"
+    tools:context=".Doctor_channelingDetails_edit">
+
+
+    <TextView
+        android:id="@+id/textView9091"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/alegreya_sc1"
+        android:text="Channeling fee :"
+        android:textColor="#0B0707"
+
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/channelingfee"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView601"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/alegreya_sc1"
+        android:text="Email fixed :"
+        android:textColor="#0B0707"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Email"
+        app:layout_constraintEnd_toEndOf="@+id/textView612"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.912" />
+
+    <TextView
+        android:id="@+id/textView612"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/alegreya_sc1"
+        android:text="Room number :"
+        android:textColor="#0B0707"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/roomnum"
+        app:layout_constraintEnd_toEndOf="@+id/textView41" />
+
+    <TextView
+        android:id="@+id/textView9011"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/alegreya_sc1"
+        android:text="Appoinment time :"
+        android:textColor="#0B0707"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Atime"
+        app:layout_constraintEnd_toEndOf="@+id/textView9091" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/alegreya_sc1"
+        android:text="Appoinment dates :"
+        android:textColor="#0B0707"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Adate"
+        app:layout_constraintEnd_toEndOf="@+id/textView9011" />
+
+    <Button
+        android:id="@+id/saveProfileInfo"
+        android:layout_width="120dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/background_dp"
+        android:text="Save"
+        android:textColor="#F4EFEF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:hint="Your Email Address"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#100808"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/roomnum"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/roomnum"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:hint="Room number"
+        android:inputType="text"
+        android:textColorHint="#100808"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/Adate"
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+    <EditText
+        android:id="@+id/Adate"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:hint=" Appointment date"
+        android:inputType="text"
+        android:textColorHint="#100808"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/Atime"
+        app:layout_constraintTop_toBottomOf="@+id/roomnum" />
+
+    <EditText
+        android:id="@+id/Atime"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:hint="Appointment time"
+        android:inputType="text"
+        android:textColorHint="#100808"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/channelingfee"
+        app:layout_constraintTop_toBottomOf="@+id/Adate" />
+
+    <EditText
+        android:id="@+id/channelingfee"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:hint="Channeling fee"
+        android:inputType="phone"
+        android:textColorHint="#100808"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Atime"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="413dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="192dp"
+        android:fontFamily="@font/audiowide6"
+        android:text="CHANNELING DETAILS EDIT"
+        android:textAlignment="center"
+        android:textColor="#05255A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="342dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

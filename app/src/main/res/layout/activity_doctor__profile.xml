@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abx"
+    tools:context=".Doctor_Profile">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="451dp"
+        android:layout_height="358dp"
+        android:background="@drawable/background_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/name_textview"
+            android:layout_width="267dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="44dp"
+            android:fontFamily="@font/audiowide3"
+            android:text="HEALTHCARE+"
+            android:textAlignment="center"
+            android:textColor="#ECE3E3"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/profilePic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.391"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="353dp"
+            android:layout_height="37dp"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="@font/armata"
+            android:text="Fullname"
+            android:textAlignment="center"
+            android:textColor="#EDEAEA"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profilePic"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="345dp"
+            android:layout_height="27dp"
+
+            android:layout_marginStart="123dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="99dp"
+            android:text="Email"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.603"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullName"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints,NotSibling" />
+
+        <ImageView
+            android:id="@+id/profilePic"
+            android:layout_width="139dp"
+            android:layout_height="148dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pp_icon" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="144dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="33dp"
+            android:fontFamily="@font/audiowide12"
+            android:shadowColor="#4AE8DADA"
+            android:text="DOCTORS...."
+            android:textColor="#B0EFEBEB"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/profilePic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.794"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_textview"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="226dp"
+        android:layout_height="32dp"
+        android:text="phone"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <TextView
+        android:id="@+id/GMC"
+        android:layout_width="226dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="272dp"
+        android:text="GMC"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/phone"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        app:layout_constraintVertical_bias="0.512"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <TextView
+        android:id="@+id/Specialization"
+        android:layout_width="226dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="224dp"
+        android:text="Specialization"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/GMC"
+        app:layout_constraintTop_toBottomOf="@+id/GMC"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="200dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/btnback3"
+        android:onClick="logout"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/update_profile"
+        app:layout_constraintTop_toBottomOf="@+id/abtn"
+        app:layout_constraintVertical_bias="0.966" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="320dp"
+        android:fontFamily="@font/alegreya_sc2"
+        android:text="Mobile number :"
+        android:textColor="#130A0A"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/phone"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="232dp"
+        android:fontFamily="@font/alegreya_sc2"
+        android:text="Specialization :"
+        android:textColor="#130A0A"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Specialization" />
+
+    <Button
+        android:id="@+id/update_profile"
+        android:layout_width="186dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/btnback3"
+        android:text="EDIT PROFILE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logoutbtn"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/chbtn"
+        android:layout_width="186dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btnback"
+        android:text="CHANNELING DETAILS"
+        android:textColor="#FBF8F8"
+        app:layout_constraintEnd_toEndOf="@+id/update_profile"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/abtn" />
+
+    <Button
+        android:id="@+id/abtn"
+        android:layout_width="200dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="612dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btnback"
+        android:text="APPOINTMENTS"
+        android:textColor="#EFECEC"
+        app:layout_constraintEnd_toEndOf="@+id/logoutbtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/logoutbtn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/alegreya_sc2"
+        android:text="GMC   number :"
+        android:textColor="#130A0A"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/GMC" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GMC"
+        app:layout_constraintVertical_bias="0.258"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DOCTOR PROFILE"
+        android:textColor="#090707"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

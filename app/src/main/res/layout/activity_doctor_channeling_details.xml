@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abx"
+    tools:context=".Doctor_channelingDetails">
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="399dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/audiowide9"
+        android:text="EDIT CHANNELING DETAILS"
+        android:textAlignment="center"
+        android:textColor="#033465"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        tools:ignore="UnknownIdInLayout" />
+
+
+    <TextView
+        android:id="@+id/channelingfee"
+        android:layout_width="210dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="264dp"
+        android:text="Channeling fee"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="@+id/Adate"
+        app:layout_constraintTop_toBottomOf="@+id/Adate"
+        tools:ignore="DuplicateIds,MissingConstraints,NotSibling" />
+
+    <Button
+        android:id="@+id/Ceditbtn"
+        android:layout_width="156dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/btnback"
+        android:text="EDIT"
+        android:textColor="#F1E7E7"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:fontFamily="@font/alegreya_sc1"
+        android:text="Room number :"
+        android:textColor="#0B0707"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/roomnum" />
+
+    <TextView
+        android:id="@+id/textView909"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sc1"
+        android:text="Channeling fee :"
+        android:textColor="#0B0707"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Ceditbtn"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/channelingfee"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sc1"
+        android:text="Appoinment dates :"
+        android:textColor="#0B0707"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView90"
+        app:layout_constraintTop_toTopOf="@+id/Adate" />
+
+    <TextView
+        android:id="@+id/textView90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sc1"
+        android:text="Appoinment time :"
+        android:textColor="#0B0707"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/Atime" />
+
+    <TextView
+        android:id="@+id/roomnum"
+        android:layout_width="210dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="4dp"
+        android:text="Room number"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.339"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <TextView
+        android:id="@+id/Atime"
+        android:layout_width="210dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="388dp"
+        android:text="Appoinment time"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/roomnum"
+        app:layout_constraintTop_toBottomOf="@+id/roomnum"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <TextView
+        android:id="@+id/Adate"
+        android:layout_width="210dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="324dp"
+        android:background="#FFFFFF"
+        android:text="Appoinment dates"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Atime"
+        app:layout_constraintTop_toBottomOf="@+id/Atime"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="329dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
