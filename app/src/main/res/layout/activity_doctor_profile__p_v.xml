@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abx"
+    tools:context=".Doctor_profile_PV">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="443dp"
+        android:layout_height="344dp"
+        android:background="@drawable/background_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/name_textview"
+            android:layout_width="267dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="44dp"
+            android:fontFamily="@font/audiowide3"
+            android:text="HEALTHCARE+"
+            android:textAlignment="center"
+            android:textColor="#ECE3E3"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/profilePic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.391"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="353dp"
+            android:layout_height="37dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="60dp"
+            android:text="Fullname"
+            android:textAlignment="center"
+            android:textColor="#EDEAEA"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profilePic" />
+
+        <TextView
+            android:id="@+id/Specialization"
+            android:layout_width="345dp"
+            android:layout_height="27dp"
+
+            android:layout_marginStart="123dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="99dp"
+            android:text="Specialization"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.596"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullName"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints,NotSibling" />
+
+        <ImageView
+            android:id="@+id/profilePic"
+            android:layout_width="139dp"
+            android:layout_height="148dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pp_icon" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="144dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="33dp"
+            android:fontFamily="@font/audiowide12"
+            android:shadowColor="#4AE8DADA"
+            android:text="DOCTORS...."
+            android:textColor="#B0EFEBEB"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/profilePic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.794"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_textview"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="email"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/GMC"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:text="phone"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Email"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <TextView
+        android:id="@+id/GMC"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="GMC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/roomnum"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <TextView
+        android:id="@+id/roomnum"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="room num"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/Adate"
+        app:layout_constraintTop_toBottomOf="@+id/GMC"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <TextView
+        android:id="@+id/Atime"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Available time"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/channelingfee"
+        app:layout_constraintTop_toBottomOf="@+id/Adate"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <TextView
+        android:id="@+id/channelingfee"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="28dp"
+        android:text="channeling fee"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Atime"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <TextView
+        android:id="@+id/Adate"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Available date"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/Atime"
+        app:layout_constraintTop_toBottomOf="@+id/roomnum"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sc3"
+        android:text="Mobile number :"
+        android:textColor="#070505"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView45"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/phone" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:fontFamily="@font/alegreya_sc3"
+        android:text="channeling fee :"
+        android:textColor="#070505"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/channelingfee"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sc3"
+        android:text="Room number :"
+        android:textColor="#070505"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView02"
+        app:layout_constraintTop_toTopOf="@+id/roomnum"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sc3"
+        android:text="Available time :"
+        android:textColor="#070505"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/Atime"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sc3"
+        android:text="Available date :"
+        android:textColor="#070505"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView01"
+        app:layout_constraintTop_toTopOf="@+id/Adate"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sc3"
+        android:text="Email :"
+        android:textColor="#070505"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/Email" />
+
+    <Button
+        android:id="@+id/chbtn"
+        android:layout_width="186dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btnback"
+        android:text="CHANNEL"
+        android:textColor="#FBF8F8"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sc3"
+        android:text="GMC   number :"
+        android:textColor="#070505"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView0"
+        app:layout_constraintTop_toTopOf="@+id/GMC" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
