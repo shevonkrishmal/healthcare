@@ -17,5 +17,7 @@
     <string name="check1">PayPal </string>
     <string name="check2">Visa </string>
     <string name="button4">ADD CARD </string>
+    <string name="todo">todo</string>
+    <string name="create_new_patient_account">create_new_patient_account</string>
 
 </resources>

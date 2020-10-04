@@ -91,6 +91,7 @@ public class Doctor_Profile extends AppCompatActivity {
             }
         });
 
+
         DoctorID = auth.getCurrentUser().getUid();
         doctor = auth.getCurrentUser();
 

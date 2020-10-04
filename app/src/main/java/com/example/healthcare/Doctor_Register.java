@@ -22,6 +22,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.auth.User;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -98,7 +99,7 @@ public class Doctor_Register extends AppCompatActivity {
         adate= findViewById(R.id.Adate);
         atime = findViewById(R.id.Atime);
         dfee  = findViewById(R.id.channelingfee);
-        splzn = findViewById(R.id.Email);
+        splzn = findViewById(R.id.Specialization);
 
         /*if (auth.getCurrentUser() != null){
             startActivity(new Intent(getApplicationContext(),MainActivity.class));
@@ -127,16 +128,16 @@ public class Doctor_Register extends AppCompatActivity {
     private void ConDoctor(){
 
 
-        Email = email.getText().toString();
-         Password = password.getText().toString();
-         fullName = fullname.getText().toString();
-         phone = Phone.getText().toString();
-         Gmc = gmc.getText().toString();
-         Atime = atime.getText().toString();
-         Adate = adate.getText().toString();
-         Roomnum = roomnum.getText().toString();
-         Dfee = dfee.getText().toString();
-        Specialization = splzn.getText().toString();
+        final String  Email = email.getText().toString();
+        final String Password = password.getText().toString();
+        final String  fullName = fullname.getText().toString();
+        final String   phone = Phone.getText().toString();
+        final String   Gmc = gmc.getText().toString();
+        final String   Atime = atime.getText().toString();
+        final String   Adate = adate.getText().toString();
+        final String   Roomnum = roomnum.getText().toString();
+        final String   Dfee = dfee.getText().toString();
+        final String   Specialization = splzn.getText().toString();
 
         // url = imageUri.toString();
 
@@ -155,23 +156,16 @@ public class Doctor_Register extends AppCompatActivity {
             return;
         }
 
-
-        registerUser();
-
-    }
-
-
-
-    public void registerUser() {
         auth.createUserWithEmailAndPassword(Email, Password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-                          //  Log.d(TAG, "createUserWithEmail:success");
+                            //  Log.d(TAG, "createUserWithEmail:success");
                             Toast.makeText(Doctor_Register.this,"user created", Toast.LENGTH_LONG).show();
                             DoctorID = auth.getCurrentUser().getUid();
+
                             DocumentReference documentReference = fstore.collection("Doctors").document(DoctorID);
                             Map<String,Object> user = new HashMap<>();
                             user.put("fullname",fullName);
@@ -184,20 +178,24 @@ public class Doctor_Register extends AppCompatActivity {
                             user.put("Doctorfee",Dfee);
                             user.put("Specialization",Specialization);
 
+                            mDatabase.child(DoctorID).setValue(user);
+
+
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
 
                                 }
                             });
-                          // FirebaseUser doctor = auth.getCurrentUser();
-                         //  updateUI(doctor);
+
+                            // FirebaseUser doctor = auth.getCurrentUser();
+                            //  updateUI(doctor);
                             startActivity(new Intent(getApplicationContext(),MainActivity.class));
 
                         }
                         else {
                             // If sign in fails, display a message to the user.
-                           // Log.w(TAG, "createUserWithEmail:failure", task.getException());
+                            // Log.w(TAG, "createUserWithEmail:failure", task.getException());
                             Toast.makeText(Doctor_Register.this,"Error" + task.getException().getMessage(),Toast.LENGTH_LONG).show();
 
                         }
@@ -205,7 +203,12 @@ public class Doctor_Register extends AppCompatActivity {
 
                     }
                 });
-     }
+
+
+    }
+
+
+
  /*   private void updateUI(FirebaseUser currentUser) {
         String keyid = mDatabase.push().getKey();
         mDatabase.child(keyid).setValue(doctor); //adding user info to database
